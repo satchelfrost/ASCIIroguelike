@@ -5,7 +5,18 @@ but for now it is a working prototype which has a beginning, middle, and an end!
 
 ### Title Screen
 
+![](asciiScreenshots/asciiTitleScreen.PNG)
 
+### Be careful of enemies
+
+![](asciiScreenshots/asciiSnippet2.PNG)
+
+### Spoiler Alert (you need the stone of truth to enter the sacred forest, fetch quest complete!)
+
+![](asciiScreenshots/stoneOfTruth.PNG)
+
+### You Won!
+![](asciiScreenshots/asciiYouWon.PNG)
 
 Art:
 title screen letters are courtesy of:
