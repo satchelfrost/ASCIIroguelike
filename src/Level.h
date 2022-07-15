@@ -4,12 +4,15 @@
 #include <iostream>
 #include "Player.h"
 #include <fstream>
-#include <Windows.h>
 #include <random>
 #include <ctime>
 #include <cstdlib>
 #include "Character.h"
 #include "Monster.h"
+
+#ifdef WIN32
+#include <Windows.h>
+#endif
 
 using namespace std;
 

@@ -110,6 +110,7 @@ void Level::clearEnemyHealth() {
 	cout << "               ";
 }
 
+#ifdef WIN32
 void Level::setCursorPosition(int x, int y)
 {//puts the cursor on a particular position so that a character can be drawn
 	static const HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -117,6 +118,12 @@ void Level::setCursorPosition(int x, int y)
 	COORD coord = { (SHORT)x,(SHORT)y };
 	SetConsoleCursorPosition(hOut, coord);
 }
+#else
+void Level::setCursorPosition(int x, int y) {
+	cout.flush();
+  printf("\033[%d;%dH", (short)y + 1, (short)x + 1);
+}
+#endif
 
 bool Level::scrollScreen(Character &p)
 {//scrolls the screen and returns true when the screen has been scrolled (only up and down for now)
